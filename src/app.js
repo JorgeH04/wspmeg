@@ -9,7 +9,11 @@ import { config } from './config/index.js';
 // 👇 IMPORTAMOS EL CRON DE INACTIVIDAD           
 //import { startInactivityChecker } from './jobs/inactivityChecker.js'; 
  
-const PORT = config.PORT;                    
+const PORT = config.PORT;    
+
+
+
+
 
 const connectDB = async () => {           
   try { 
