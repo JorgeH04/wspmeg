@@ -46,13 +46,13 @@ const main = async () => {
     console.log('ERROR: Falta agregar un provider al .env');
   }  
 
-  const adapterDB = new Database(); 
+  const adapterDB = new Database();   
 
-  const { httpServer } = await createBot({
+  const { httpServer } = await createBot({  
     flow: adapterFlow,
     provider: adapterProvider,
     database: adapterDB, 
-  });   
+  });     
          
     // 🕒 INICIAMOS EL CHECKER DE INACTIVIDAD
   //startInactivityChecker();    
